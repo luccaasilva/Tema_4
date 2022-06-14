@@ -1,6 +1,10 @@
 package com.company;
 
 public class Primos {
+    /**
+     * @param max el numero final
+     * @return devuelve los numeros primos
+     */
     public static int[] generadorPrimos(int max) {
         Primos primo = new Primos();
         int i, j;
@@ -22,7 +26,11 @@ public class Primos {
 
         }
     }
-
+    /**
+     * @param size el tamaño del array
+     * @param esPrimo te dice si es primo o no
+     * @return return del numero de primos
+     */
     public int countingPrimos(int size, boolean[] esPrimo) {
         int counting = 0;
         for (int i = 0; i < size; i++) {
@@ -32,7 +40,11 @@ public class Primos {
         }
         return counting;
     }
-
+    /**
+     * @param counting el numero de primos
+     * @param size tamaño del array
+     * @return return del array con los primos
+     */
     public int[] rellenarVPrimos(int counting, int size, boolean[] esPrimo) {
         int[] primos = new int[counting];
         int i, j;
@@ -54,6 +66,9 @@ public class Primos {
         }
         return esPrimo;
     }
+    /**
+     * @return asigna true a todos los numeros, como que todos los numeros son primos
+     */
     public boolean[] startArray(int size, boolean[] esPrimo) {
         for (int i = 0; i < size; i++) {
             esPrimo[i] = true;
